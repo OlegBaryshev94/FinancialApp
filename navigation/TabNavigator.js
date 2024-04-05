@@ -1,8 +1,8 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import { MaterialCommunityIcons } from '@expo/vector-icons'; 
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 
-import TransactionStackNavigator from '../screens/TransactionStackNavigator'; 
+import TransactionStackNavigator from '../screens/TransactionStackNavigator';
 import SummaryScreen from '../screens/SummaryScreen';
 
 const Tab = createBottomTabNavigator();
@@ -19,6 +19,7 @@ const TabNavigator = () => {
           ),
         }}
       />
+      
       <Tab.Screen 
         name="Summary" 
         component={SummaryScreen} 
